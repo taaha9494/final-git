@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Piratage en cours...</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://i.postimg.cc/MKMSCyLh/Capture-d-cran-2024-07-10-123134.png";
+        }, 5000); // redirige après 5 secondes
+
+        function loadingEffect() {
+            var dots = 0;
+            var elem = document.getElementById("loading");
+            setInterval(function() {
+                if (dots < 3) {
+                    elem.innerHTML += ".";
+                    dots++;
+                } else {
+                    elem.innerHTML = "Analyse des fichiers en cours";
+                    dots = 0;
+                }
+            }, 500);
+        }
+    </script>
+</head>
+<body onload="loadingEffect()">
+    <img src="https://i.postimg.cc/SNzdFsfZ/Capture-d-cran-2024-07-10-121739.png" alt="Aperçu">
+    <h1>Votre téléphone a été piraté !</h1>
+    <p id="loading">Analyse des fichiers en cours</p>
+</body>
+</html>
